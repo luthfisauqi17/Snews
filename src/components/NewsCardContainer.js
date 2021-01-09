@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function NewsCardContainer(props) {
   return (
     <div>
+      <h1>News/</h1>
       <Row className="d-flex justify-content-center">
         <NewsCard id="1" />
         <NewsCard id="2" />
