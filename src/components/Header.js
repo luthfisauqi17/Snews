@@ -1,6 +1,8 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { faHome, faNewspaper } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header(props) {
   return (
@@ -19,12 +21,14 @@ function Header(props) {
             className="text-primary btn btn-outline-primary ml-1 mr-1 mt-1 mb-1"
             href="/home"
           >
+            <FontAwesomeIcon icon={faHome} />
             Home
           </Nav.Link>
           <Nav.Link
             className="text-info btn btn-outline-info ml-1 mr-1 mt-1 mb-1"
             href="/news"
           >
+            <FontAwesomeIcon icon={faNewspaper} />
             News
           </Nav.Link>
         </Nav>

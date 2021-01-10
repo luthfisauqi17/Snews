@@ -62,7 +62,7 @@ function Home(props) {
         <Button
           className="btn btn-primary btn-lg btn-block"
           href="/news"
-          variant="primary"
+          variant="info"
         >
           Browse News
         </Button>
