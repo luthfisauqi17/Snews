@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 function Home(props) {
   const random_image = `https://picsum.photos/seed/${Math.floor(
     Math.random() * 1001
-  )}/1500/800`;
+  )}/1500/785`;
   return (
     <div>
       <Helmet>
@@ -18,7 +18,7 @@ function Home(props) {
         <Figure>
           <Figure.Image
             width={1500}
-            height={800}
+            height={785}
             alt={random_image}
             src={random_image}
           />
