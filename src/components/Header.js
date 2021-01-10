@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { faHome, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../App.css";
 
 function Header(props) {
   return (
@@ -13,7 +14,9 @@ function Header(props) {
       expand="lg"
       sticky={"top"}
     >
-      <Navbar.Brand href="/home">SNEWS</Navbar.Brand>
+      <Navbar.Brand className="iconFont" href="/home">
+        SNEWS
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
