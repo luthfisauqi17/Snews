@@ -29,12 +29,15 @@ function CommentSection(props) {
           />
         </Form.Group>
         <CommentCard name={name} comment={comment} />
-        <Button className="mt-4" variant="primary" type="submit">
+        <Button variant="primary" type="submit">
           Add comment
         </Button>
       </Form>
 
       <h3 className="mt-4">All comments:</h3>
+      <CommentCard name="Bob" comment="Wow, i cannot believe that" />
+      <CommentCard name="Andy" comment="Seriously, i thought so" />
+      <CommentCard name="Jack" comment="I'm not surprised to hear that" />
     </div>
   );
 }
