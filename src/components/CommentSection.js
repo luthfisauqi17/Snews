@@ -9,7 +9,7 @@ function CommentSection(props) {
 
   return (
     <div>
-      <h1>Comments</h1>
+      <h2>Comments</h2>
       <Form>
         <Form.Group>
           <Form.Label>Your name</Form.Label>
