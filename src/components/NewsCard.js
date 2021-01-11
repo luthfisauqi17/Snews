@@ -12,7 +12,9 @@ function NewsCard(props) {
         <Card.Body>
           <Card.Title>News Title</Card.Title>
           <Card.Text>News Description..</Card.Text>
-          <Button variant="outline-primary">Read More</Button>
+          <Button href="/news_detail" variant="outline-primary">
+            Read More
+          </Button>
         </Card.Body>
       </Card>
     </div>

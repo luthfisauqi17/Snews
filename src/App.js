@@ -2,12 +2,11 @@ import React from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import News from "./components/News";
+import NewsDetail from "./components/NewsDetail";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Helmet from "react-helmet";
-
-import CommentSection from "./components/CommentSection";
 
 function App(props) {
   return (
@@ -21,8 +20,7 @@ function App(props) {
       </Helmet>
       <Header />
       <Container>
-        <CommentSection />
-        {/* <Router>
+        <Router>
           <Switch>
             <Route path="/home">
               <Home />
@@ -30,11 +28,14 @@ function App(props) {
             <Route path="/news">
               <News />
             </Route>
+            <Route path="/news_detail">
+              <NewsDetail />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
           </Switch>
-        </Router> */}
+        </Router>
       </Container>
     </div>
   );

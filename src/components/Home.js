@@ -1,4 +1,5 @@
 import React from "react";
+import News from "./News";
 import { Jumbotron, Button, Carousel, Figure } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
@@ -67,6 +68,7 @@ function Home(props) {
           Browse News
         </Button>
       </Jumbotron>
+      <News />
     </div>
   );
 }
