@@ -20,8 +20,7 @@ function CommentSection(props) {
         onSubmit={(event) => {
           event.preventDefault();
           const temp = { name: name, comment: comment };
-          setComments({ comments: [...comments, temp] });
-          console.log(comments);
+          setComments([...comments, temp]);
         }}
       >
         <Form.Group>
