@@ -7,10 +7,23 @@ function CommentSection(props) {
   const [name, setName] = useState("Your name");
   const [comment, setComment] = useState("Your comment");
 
+  const [comments, setComments] = useState([
+    { name: "Bob", comment: "Wow, i cannot believe that" },
+    { name: "Andy", comment: "Seriously, i thought so" },
+    { name: "Jack", comment: "I'm not surprised to hear that" },
+  ]);
+
   return (
     <div>
       <h2>Comments</h2>
-      <Form>
+      <Form
+        onSubmit={(event) => {
+          event.preventDefault();
+          const temp = { name: name, comment: comment };
+          setComments({ comments: [...comments, temp] });
+          console.log(comments);
+        }}
+      >
         <Form.Group>
           <Form.Label>Your name</Form.Label>
           <Form.Control
@@ -35,9 +48,9 @@ function CommentSection(props) {
       </Form>
 
       <h3 className="mt-4">All comments:</h3>
-      <CommentCard name="Bob" comment="Wow, i cannot believe that" />
-      <CommentCard name="Andy" comment="Seriously, i thought so" />
-      <CommentCard name="Jack" comment="I'm not surprised to hear that" />
+      {comments.map((item, key) => (
+        <CommentCard name={item.name} comment={item.comment} key={key} />
+      ))}
     </div>
   );
 }
